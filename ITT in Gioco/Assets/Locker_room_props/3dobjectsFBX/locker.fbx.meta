@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: 46e2406d597f43e498322a545c329207
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
+    100000: Camera
+    100002: //RootNode
+    100004: Mesh
+    400000: Camera
+    400002: //RootNode
+    400004: Mesh
+    2300000: Mesh
+    3300000: Mesh
     4300000: Mesh
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 2
@@ -26,6 +35,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -33,7 +43,10 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -49,6 +62,7 @@ ModelImporter:
     normalSmoothAngle: 32
     normalImportMode: 1
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
