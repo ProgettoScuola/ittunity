@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bool_keys:
   - pbDragSelectWholeElement
+  - pbIconGUI
+  - pbDefaultOpenInDockableWindow
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
@@ -26,11 +28,11 @@ MonoBehaviour:
   - pbCurrentMaterialPalette
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 00
-  m_Int_values: 0000000001000000020000000100000000000000
+  m_Bool_values: 000001
+  m_Int_values: 0000000001000000000000000100000000000000
   m_Float_values:
   - 0
-  - 176
+  - 0
   m_String_values:
   - Assets/ProCore/ProBuilder/Data/Default Material Palette.asset
   m_Color_values: []
