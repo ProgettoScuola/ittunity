@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/scena 2.unity
     guid: f661481066829194a9f5b32f436a4616
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/5b75cbe55290a504b8a2e468999d81ec
+    guid: 5b75cbe55290a504b8a2e468999d81ec
