@@ -320,6 +320,8 @@
     <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
     <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
     <Compile Include="Assets\ITT\MotoreGioco\Inventario.cs" />
+    <Compile Include="Assets\ITT\Salvataggio\Inventario\Inventario.cs" />
+    <Compile Include="Assets\ITT\Salvataggio\Statistiche\Statistiche.cs" />
     <Compile Include="Assets\ITT\Utilita\Utilita.cs" />
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
     <Compile Include="Assets\fps.cs" />
@@ -518,7 +520,6 @@
   <ItemGroup>
     <Folder Include="Assets\ITT\Controlli\" />
     <Folder Include="Assets\ITT\IU\" />
-    <Folder Include="Assets\ITT\Salvataggio\" />
     <Folder Include="Assets\ITT\Suono\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
