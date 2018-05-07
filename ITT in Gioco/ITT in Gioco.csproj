@@ -314,6 +314,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ITT\Interazioni\Muri.cs" />
+    <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
+    <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
+    <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
+    <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
+    <Compile Include="Assets\ITT\MotoreGioco\Inventario.cs" />
     <Compile Include="Assets\ITT\Utilita\Utilita.cs" />
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
     <Compile Include="Assets\fps.cs" />
@@ -511,9 +517,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\ITT\Controlli\" />
-    <Folder Include="Assets\ITT\Interazioni\" />
     <Folder Include="Assets\ITT\IU\" />
-    <Folder Include="Assets\ITT\MotoreGioco\" />
     <Folder Include="Assets\ITT\Salvataggio\" />
     <Folder Include="Assets\ITT\Suono\" />
   </ItemGroup>
