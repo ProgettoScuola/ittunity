@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using ITT;
+/*
+ classe per le interazioni con gli oggetti nell'inventario
+ */
 
-public class UtilizzaOggetto
+namespace Interazioni
 {
+    public class UtilizzaOggetto
+    {
 
+    }
 }
+
