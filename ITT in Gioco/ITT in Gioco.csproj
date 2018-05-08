@@ -264,15 +264,6 @@
   <ItemGroup>
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
     <Compile Include="Assets\fps.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Muri.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
-    <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
-    <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
-    <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
-    <Compile Include="Assets\ITT\MotoreGioco\Inventario.cs" />
-    <Compile Include="Assets\ITT\Salvataggio\Inventario\Inventario.cs" />
-    <Compile Include="Assets\ITT\Salvataggio\Statistiche\Statistiche.cs" />
-    <Compile Include="Assets\ITT\Utilita\Utilita.cs" />
     <Compile Include="Assets\iTween\iTween Editor\iTweenAlphaTo.cs" />
     <Compile Include="Assets\iTween\iTween Editor\iTweenEditor.cs" />
     <Compile Include="Assets\iTween\iTween Editor\iTweenPositionTo.cs" />
@@ -348,6 +339,8 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\VirtualJoystick\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\VirtualJoystick\Scripts\VirtualJoystick.cs" />
     <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
