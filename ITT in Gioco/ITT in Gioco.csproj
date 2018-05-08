@@ -276,6 +276,7 @@
     <Compile Include="Assets\iTween\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\iTween\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\iTween\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\MenuScript.cs" />
     <Compile Include="Assets\MyScript.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
