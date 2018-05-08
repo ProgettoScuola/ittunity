@@ -317,6 +317,10 @@
       <Project>{DD79C439-C50C-D2E7-3195-74D726209D9A}</Project>
       <Name>ITT in Gioco</Name>
     </ProjectReference>
+    <ProjectReference Include="ITT in Gioco.unityproj">
+      <Project>{DD79C439-C50C-D2E7-3195-74D726209D9A}</Project>
+      <Name>ITT in Gioco</Name>
+    </ProjectReference>
     <ProjectReference Include="ITT in Gioco.Editor.Plugins.csproj">
       <Project>{71B678C3-9EA8-0935-E193-6EDAB54D985B}</Project>
       <Name>ITT in Gioco.Editor.Plugins</Name>
