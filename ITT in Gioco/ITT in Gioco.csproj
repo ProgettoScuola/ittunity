@@ -263,6 +263,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
+    <Compile Include="Assets\FixedButton.cs" />
+    <Compile Include="Assets\FixedTouchField.cs" />
     <Compile Include="Assets\fps.cs" />
     <Compile Include="Assets\ITT\Interazioni\Muri.cs" />
     <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
@@ -280,6 +282,8 @@
     <Compile Include="Assets\iTween\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\iTween\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\iTween\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\MenuScript.cs" />
+    <Compile Include="Assets\MyScript.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
