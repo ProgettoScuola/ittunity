@@ -346,6 +346,11 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
