@@ -1,9 +1,8 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using System;
 /*
  classe per le interazioni con i punti di salvataggio
  * */
-namespace ITT
+namespace ITT.Interazione
 {
     class PuntiSalvataggio
     {

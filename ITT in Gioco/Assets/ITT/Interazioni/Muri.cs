@@ -1,10 +1,12 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using System;
 
 /*
  classe per le collisioni con i muri
  */
-public class Muri
+namespace ITT.Interazioni
 {
-   
+    public class Muri
+    {
+
+    }
 }

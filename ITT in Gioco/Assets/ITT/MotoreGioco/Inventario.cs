@@ -1,10 +1,21 @@
-﻿using UnityEngine;
-using UnityEditor;
-namespace ITT.MotoreGioco
+﻿namespace ITT.MotoreGioco
 {
 
     public class Inventario
     {
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

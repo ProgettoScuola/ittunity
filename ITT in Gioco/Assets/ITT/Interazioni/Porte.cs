@@ -1,11 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+#if UNITY_EDITOR
 using UnityEditor;
-
+#endif
+using UnityEngine;
 
 /**
  classe per le interazioni con le porte
  * */
-public class Porte
+namespace ITT.Interazione
 {
-   
+    public class Porte
+    {
+        
+    }
 }

@@ -1,9 +1,11 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using System;
 
 //classe per interagire con l'oggetto da raccogliere
-
-public class RaccogliOggetto
+namespace ITT.Interazione
 {
-   
+
+    public class RaccogliOggetto
+    {
+
+    }
 }

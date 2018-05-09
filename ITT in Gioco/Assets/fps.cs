@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fps : MonoBehaviour {
+public class Fps : MonoBehaviour {
 
     float deltaTime = 0.0f;
 
@@ -25,5 +25,11 @@ public class fps : MonoBehaviour {
         float fps = 1.0f / deltaTime;
         string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
         GUI.Label(rect, text, style);
+    }
+
+    class Test
+    {
+        int x = 0;
+        int y = 5;
     }
 }
