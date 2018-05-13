@@ -189,7 +189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 425559192}
+      - m_Target: {fileID: 425559193}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -462,8 +462,10 @@ GameObject:
   - component: {fileID: 425559189}
   - component: {fileID: 425559188}
   - component: {fileID: 425559187}
+  - component: {fileID: 425559194}
   - component: {fileID: 425559191}
   - component: {fileID: 425559192}
+  - component: {fileID: 425559193}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -570,6 +572,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86d716f5d6fd5084c96c13324760ebd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &425559193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425559186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00426cfc725725c459c1eed45a6af0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &425559194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425559186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fb993e017409646908a91a14798c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &495505144
@@ -713,7 +737,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 425559191}
+      - m_Target: {fileID: 425559193}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
