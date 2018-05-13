@@ -24,6 +24,6 @@ public class MyScript : MonoBehaviour
 
         fps.RunAxis = MoveJoystick.inputVector;
         fps.JumpAxis = JumpButton.Pressed;
-        fps.MouseLook.LookAxis = TouchField.TouchDist;
+        fps.mouseLook.LookAxis = TouchField.TouchDist;
     }
 }
