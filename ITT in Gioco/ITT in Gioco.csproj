@@ -257,6 +257,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
+    <Compile Include="Assets\Fixed Button.cs" />
+    <Compile Include="Assets\FixedTouchField.cs" />
     <Compile Include="Assets\fps.cs" />
     <Compile Include="Assets\ITT\Interazioni\Muri.cs" />
     <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
@@ -370,11 +372,6 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
-    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
@@ -473,7 +470,6 @@
     <None Include="Assets\ProCore\ProGrids\Shader\pg_GridShader.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
