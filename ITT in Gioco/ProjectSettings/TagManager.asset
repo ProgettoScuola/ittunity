@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - porta:1
+  - debugLine
   layers:
   - Default
   - TransparentFX

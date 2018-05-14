@@ -27,16 +27,17 @@ namespace ITT.Controlli
             {
                 Gyroscope gyro = Input.gyro;
 
-                gyro.enabled = true;
+                if (!gyro.enabled)
+                {
+                    gyro.enabled = true;
+                }
+                Vector3 rotazione_giocatore = transformGiocatore.rotation.eulerAngles;
+                Vector3 rotazione_camera = transformCamera.rotation.eulerAngles;
 
-                Vector3 rotazione1 = new Vector3();
-                Vector3 rotazione2 = new Vector3();
+                
+                Quaternion rotazione = gyro.attitude;
 
-                rotazione1.x = - gyro.rotationRateUnbiased.x;
-                rotazione2.y = - gyro.rotationRateUnbiased.y;
-
-                transformGiocatore.Rotate(rotazione1);
-                transformCamera.Rotate(rotazione2);
+                transformCamera.rotation = rotazione;
             }
             else
             {
