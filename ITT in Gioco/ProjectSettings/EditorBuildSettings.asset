@@ -6,5 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/LevelTest.unity
     guid: 181b8001f012a234198f4b8d5e022df8
+=======
+    path: Assets/menu.unity
+    guid: 6ab882be98b4462468635c77758dd685
+  - enabled: 1
+    path: Assets/scuola 3.unity
+    guid: db13cb33271011c45a9f88df0a4c8aa5
+>>>>>>> dc3902d1ee86db35c3ac26dce24f8659cd0d95d7
