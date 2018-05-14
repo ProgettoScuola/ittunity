@@ -27,7 +27,6 @@ namespace ITT.Interazione
             if (collision.collider.name == "Porta")
             {
                 OnGUI();
-
             }
 
         }
