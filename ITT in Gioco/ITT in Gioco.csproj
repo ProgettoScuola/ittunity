@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.4.0f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -259,7 +261,6 @@
     <Compile Include="Assets\Fixed Button.cs" />
     <Compile Include="Assets\FixedTouchField.cs" />
     <Compile Include="Assets\fps.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Muri.cs" />
     <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
     <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
     <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
