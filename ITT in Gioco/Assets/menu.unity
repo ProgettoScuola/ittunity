@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -146,8 +146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.7, y: 204.2}
-  m_SizeDelta: {x: 319.2, y: 77.7}
+  m_AnchoredPosition: {x: -10, y: 192}
+  m_SizeDelta: {x: 263.1, y: 77.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89028109
 MonoBehaviour:
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 425559191}
+      - m_Target: {fileID: 425559192}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -266,8 +266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 0}
-  m_SizeDelta: {x: 640, y: 640}
+  m_AnchoredPosition: {x: -20.6, y: 12}
+  m_SizeDelta: {x: 546.8, y: 544.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154725902
 MonoBehaviour:
@@ -515,17 +515,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 995707385}
-  m_LocalRotation: {x: 0, y: 0, z: 0.17364816, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1564345, w: 0.98768836}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425559190}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 102, y: -73.9}
-  m_SizeDelta: {x: 332.6, y: 142}
+  m_AnchoredPosition: {x: 40, y: -60}
+  m_SizeDelta: {x: 272.5, y: 142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995707387
 MonoBehaviour:
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 425559191}
+      - m_Target: {fileID: 425559192}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -706,8 +706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 0}
-  m_SizeDelta: {x: 640, y: 640}
+  m_AnchoredPosition: {x: -20.6, y: 12}
+  m_SizeDelta: {x: 546.8, y: 553.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719305919
 MonoBehaviour:
@@ -774,8 +774,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 0}
-  m_SizeDelta: {x: 640, y: 640}
+  m_AnchoredPosition: {x: -20.6, y: 4.225}
+  m_SizeDelta: {x: 555.7, y: 569.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1877341530
 MonoBehaviour:
@@ -910,8 +910,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 0}
-  m_SizeDelta: {x: 640, y: 640}
+  m_AnchoredPosition: {x: -20.600006, y: 12.000004}
+  m_SizeDelta: {x: 546.8, y: 600.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112780529
 MonoBehaviour:
