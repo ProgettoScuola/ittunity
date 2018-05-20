@@ -35,9 +35,12 @@ namespace ITT.Controlli
                 Vector3 rotazione_camera = transformCamera.rotation.eulerAngles;
 
                 
-                Quaternion rotazione = gyro.attitude;
+                Vector3 rotazione = gyro.attitude.eulerAngles;
 
-                transformCamera.rotation = rotazione;
+                rotazione_camera.x = rotazione.z;
+                //rotazione_camera.z = rotazione.x;
+
+                transformCamera.rotation = Quaternion.Euler(rotazione_camera);
             }
             else
             {

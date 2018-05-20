@@ -22,7 +22,7 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
-*.meta
+#*.meta
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -37,3 +37,4 @@ sysinfo.txt
 
 *.ide-wal
 ITT in Gioco/.vs/ITT in Gioco/v15/.suo
+ITT in Gioco/.vs/ITT in Gioco/v15/Server/sqlite3/storage.ide
