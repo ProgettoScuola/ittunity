@@ -31,25 +31,26 @@ namespace ITT.Controlli
                 {
                     gyro.enabled = true;
                 }
-                Vector3 rotazione_giocatore = transformGiocatore.rotation.eulerAngles;
-                Vector3 rotazione_camera = transformCamera.rotation.eulerAngles;
+                Vector3 rotazione_giocatore = Vector3.zero;
+                Vector3 rotazione_camera = Vector3.zero;
 
-                
-                Vector3 rotazione = gyro.attitude.eulerAngles;
+                Vector3 rotazione_giroscopio = gyro.rotationRateUnbiased;
 
-                rotazione_camera.x = rotazione.z;
-                //rotazione_camera.z = rotazione.x;
+                rotazione_camera.x = -rotazione_giroscopio.x;
+                rotazione_giocatore.y = -rotazione_giroscopio.y;
 
-                transformCamera.rotation = Quaternion.Euler(rotazione_camera);
+                transformCamera.Rotate(rotazione_camera);
+                transformGiocatore.Rotate(rotazione_giocatore);
+
+                GestoreEventiGioco.DebugLine(transformCamera.rotation.eulerAngles.ToString());
             }
-            else
-            {
-                Vector3 rotazione1 = Vector3.up * mouseX;
-                Vector3 rotazione2 = Vector3.right * -mouseY;
 
-                transformGiocatore.Rotate(rotazione1);
-                transformCamera.Rotate(rotazione2);
-            }
+            Vector3 rotazione1 = Vector3.up * mouseX;
+            Vector3 rotazione2 = Vector3.right * -mouseY;
+
+            transformGiocatore.Rotate(rotazione1);
+            transformCamera.Rotate(rotazione2);
+            
         }
 
         public void Salto(Rigidbody bodyGiocatore, float forzaSalto)
