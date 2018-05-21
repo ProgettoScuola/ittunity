@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System.IO;
+using System;
 
 namespace ITT.Salvataggio.Statistiche
 {
@@ -14,7 +16,7 @@ namespace ITT.Salvataggio.Statistiche
 
         PlayerInfo stats = new PlayerInfo();
 
-        String filepath = "C:/Users/unity/Desktop/Prova/save1.json";
+        string filepath = "/salvataggio.json";
 
         public void Load(string id)
         {
