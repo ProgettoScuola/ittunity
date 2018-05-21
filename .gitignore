@@ -12,7 +12,7 @@ ITT in Gioco/.vs/
 ExportedObj/
 .consulo/
 #*.csproj
-#*.unityproj
+*.unityproj
 #*.sln
 *.suo
 *.tmp
