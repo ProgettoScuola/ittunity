@@ -5,7 +5,7 @@ using System;
 
 namespace ITT.Salvataggio.Statistiche
 {
-    public class Statistiche
+    class Statistiche
     {
         public Statistiche()
         {

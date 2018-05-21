@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace ITT.Salvataggio.Inventario
 {
-    public class Inventario
+    class Inventario
     {
         public Inventario()
         {

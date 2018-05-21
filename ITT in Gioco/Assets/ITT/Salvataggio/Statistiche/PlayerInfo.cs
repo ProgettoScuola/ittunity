@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace ITT.Salvataggio.Statistiche
 {
-    public class PlayerInfo
+    class PlayerInfo
     {
         public Vector3 position;
         public Quaternion rotation;

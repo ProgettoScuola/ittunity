@@ -1,7 +1,7 @@
 ﻿namespace ITT.MotoreGioco
 {
 
-    public class Inventario
+    class Inventario
     {
         public override bool Equals(object obj)
         {
