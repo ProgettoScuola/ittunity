@@ -14,21 +14,30 @@ namespace ITT.Interazione
     public class Porte
     {
 
-        string stringToEdit = "Premi il bottone per aprire la porta";
-        void OnGUI()
-        {
-            // Make a multiline text area that modifies stringToEdit.
-            stringToEdit = GUI.TextArea(new Rect(10, 10, 200, 100), stringToEdit, 200);
 
-        }
-
-        void OnTriggerStay(Collision collision)
+        /**
+         * Metodo che controlla se posso aprire o meno la porta
+         * Prende la porta con cui si interagisce e controlla nel inventario se si possiede la chiave ee se necessaria
+         * 
+         * Return true se si puo aprire, false se non si puo aprire
+         * */
+        public Boolean ControllaPorta(Porta p)
         {
-            if (collision.collider.name == "Porta")
+
+            if (!p.chiusa)
             {
-                OnGUI();
+                return true;
             }
+            if (!p.serveChiave)
+            {
+                return true;
+            }
+            else
+            {
+                //controllo nell'inventario se ho la chiave
 
+            }
+            return false;
         }
     }
 }
