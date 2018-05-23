@@ -5,7 +5,7 @@ using System;
 
 namespace ITT.Salvataggio.Statistiche
 {
-    public class Statistiche : MonoBeahviour
+    public class Statistiche : MonoBehaviour
     {
         public Statistiche()
         {
@@ -16,28 +16,56 @@ namespace ITT.Salvataggio.Statistiche
 
         PlayerInfo stats = new PlayerInfo();
 
-        string filepath = "/salvataggio.json";
+        string filepath = "stats_saved.json";
+        string id_obj_gui = "Cube";
 
-        public void Load(string id)
+        public void Start() //metodo per interfacciarsi con la parte grafica, puo essere sostituito con qualsiasi altro evento
         {
-            stats = new PlayerInfo();
-            stats = ReadFromFile(filepath);
-
-            setPosition(stats.position, id);
-            setRotation(stats.rotation, id);
+            //metodo load
+            load(id_obj_gui);
         }
 
-        public void Save(string id)
+        public void OnMouseEnter() //metodo per interfacciarsi con la parte grafica, puo essere sostituito con qualsiasi altro evento
+        {
+            //metodo save
+            save(id_obj_gui);
+        }
+
+        public void load(string id)
+        {
+            //controllo sul file, se non esiste lo crea
+            if (!File.Exists(filepath))
+            {
+                try
+                {
+                    Debug.Log("il file non esiste, lo creo");
+                    File.Create(filepath);
+                }
+                catch (Exception e)
+                {
+                    Debug.Log(e);
+                }
+            }
+            else
+            {
+                stats = new PlayerInfo();
+                stats = ReadFromFile(filepath);
+                //load effettivo
+                setPosition(stats.position, id);
+                setRotation(stats.rotation, id);
+            }
+        }
+
+        public void save(string id)
         {
             //get all variables from the gamne
             stats.position = getPosition(id);
             stats.rotation = getRotation(id);
-            stats.salute = 12;
-            stats.fame = 12;
-            //load effettivo
+            stats.salute = 12; //variabile di prova
+            stats.fame = 12; //variabile di prova
+            //save effettivo
             WriteToFile(filepath);
         }
-
 
         //write to file, posso utilizzare questo metodo per leggere direttamente l'istanza della classe
         public void WriteToFile(string filePath)
@@ -57,41 +85,24 @@ namespace ITT.Salvataggio.Statistiche
         //read dal file
         public PlayerInfo ReadFromFile(string filePath)
         {
-            // If the file doesn't exist then just return the default object.
-            if (!File.Exists(filePath))
+            // If the file does exist then read the entire file to a string.
+            string contents = File.ReadAllText(filePath);
+
+            // If debug is on then tell us the file we read and its contents.
+            if (DEBUG_ON)
+                Debug.LogFormat("ReadFromFile({0})\ncontents:\n{1}", filePath, contents);
+
+            // If it happens that the file is somehow empty then tell us and return a new SaveData object.
+            if (string.IsNullOrEmpty(contents))
             {
-                try
-                {
-                    Debug.Log("il file non esiste");
-                    File.Create(filePath);
-                    return new PlayerInfo();
-                }
-                catch (Exception e)
-                {
-                    Debug.Log(e);
-                }
+                Debug.LogErrorFormat("File: '{0}' is empty. Returning default SaveData");
                 return new PlayerInfo();
             }
-            else
-            {
-                // If the file does exist then read the entire file to a string.
-                string contents = File.ReadAllText(filePath);
 
-                // If debug is on then tell us the file we read and its contents.
-                if (DEBUG_ON)
-                    Debug.LogFormat("ReadFromFile({0})\ncontents:\n{1}", filePath, contents);
-
-                // If it happens that the file is somehow empty then tell us and return a new SaveData object.
-                if (string.IsNullOrEmpty(contents))
-                {
-                    Debug.LogErrorFormat("File: '{0}' is empty. Returning default SaveData");
-                    return new PlayerInfo();
-                }
-
-                // Otherwise we can just use JsonUtility to convert the string to a new SaveData object.
-                return JsonUtility.FromJson<PlayerInfo>(contents);
-            }
+            // Otherwise we can just use JsonUtility to convert the string to a new SaveData object.
+            return JsonUtility.FromJson<PlayerInfo>(contents);
         }
+
         //getter to save the data
 
         //get position of target element
