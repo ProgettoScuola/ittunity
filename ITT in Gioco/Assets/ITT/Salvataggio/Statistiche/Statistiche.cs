@@ -5,7 +5,7 @@ using System;
 
 namespace ITT.Salvataggio.Statistiche
 {
-    class Statistiche
+    public class Statistiche : MonoBeahviour
     {
         public Statistiche()
         {
