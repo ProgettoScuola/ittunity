@@ -14,4 +14,12 @@ public class MenuScript : MonoBehaviour {
     {
         Application.Quit();
     }
+    public void SetVolume(float volume)
+    {
+        Debug.Log(volume);
+    }
+    public void buttonEvent()
+    {
+        Handheld.Vibrate();
+    }
 }
