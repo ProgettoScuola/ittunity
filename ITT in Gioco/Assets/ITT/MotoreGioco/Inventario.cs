@@ -1,23 +1,63 @@
-﻿namespace ITT.MotoreGioco
+﻿using System.Collections.Generic;
+
+namespace ITT.MotoreGioco
 {
 
-    class Inventario
+    public class Inventario
     {
-        public override bool Equals(object obj)
+
+
+        public float maxPeso = 50f;
+        public List<OggettoInventario> listaOggettiInventario;
+
+
+        public Inventario()
         {
-            return base.Equals(obj);
+            listaOggettiInventario = new List<OggettoInventario>();
         }
 
-        public override int GetHashCode()
+        public bool rimuoviOggettoInventario(OggettoInventario o)
         {
-            return base.GetHashCode();
+           return listaOggettiInventario.Remove(o);
         }
 
-        public override string ToString()
+        public OggettoInventario cercaIdOggetto (int id)
         {
-            return base.ToString();
+            foreach (OggettoInventario o in listaOggettiInventario)
+            {
+                if(id == o.id)
+                {
+                    return o;
+                }
+            }
+            return null;//ritorna valore null se non trova l'id ricercato.
         }
 
 
+
+
+        public OggettoInventario aggiungiOggetto(OggettoInventario o)
+        {
+            if(getSommmaPesiOggettiInventario() + o.peso  < maxPeso) {
+                listaOggettiInventario.Add(o);
+                return o;
+            }
+            else
+            {
+                return null;//torna valore null perche ha raggiunto il peso massimo.
+            }
+            
+        }
+
+
+        public float getSommmaPesiOggettiInventario()
+        {
+            float somma = 0f;
+            foreach(OggettoInventario o in listaOggettiInventario)
+            {
+                somma = somma + o.peso;
+            }
+            return somma;
+        }
     }
 }

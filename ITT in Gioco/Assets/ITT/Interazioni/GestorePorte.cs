@@ -4,15 +4,16 @@ using UnityEditor;
 #endif
 using UnityEngine;
 using System.Collections;
-
+using ITT.MotoreGioco;
 
 /**
  classe per le interazioni con le porte
  * */
 namespace ITT.Interazione
 {
-    public class Porte
+    public class GestorePorte
     {
+
 
 
         /**
@@ -21,8 +22,9 @@ namespace ITT.Interazione
          * 
          * Return true se si puo aprire, false se non si puo aprire
          * */
-        public Boolean ControllaPorta(Porta p)
+        public Boolean ControllaPorta(Porta p,Inventario i)
         {
+           
 
             if (!p.chiusa)
             {
@@ -35,6 +37,19 @@ namespace ITT.Interazione
             else
             {
                 //controllo nell'inventario se ho la chiave
+                OggettoInventario o = i.cercaIdOggetto(p.numeroChiave);
+                if ( o == null)
+                {
+                    return false;//non posso aprire la porta perchè manca la chiave.    
+                }
+                else
+                {
+                    i.rimuoviOggettoInventario(o);
+                    return true;//se trova l'oggetto lo rimuove e passa il valore true.
+                }
+
+
+
 
             }
             return false;
