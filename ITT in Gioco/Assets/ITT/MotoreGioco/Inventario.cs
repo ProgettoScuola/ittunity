@@ -16,6 +16,23 @@ namespace ITT.MotoreGioco
             listaOggettiInventario = new List<OggettoInventario>();
         }
 
+        public bool rimuoviOggettoInventario(OggettoInventario o)
+        {
+           return listaOggettiInventario.Remove(o);
+        }
+
+        public OggettoInventario cercaIdOggetto (int id)
+        {
+            foreach (OggettoInventario o in listaOggettiInventario)
+            {
+                if(id == o.id)
+                {
+                    return o;
+                }
+            }
+            return null;//ritorna valore null se non trova l'id ricercato.
+        }
+
 
 
 

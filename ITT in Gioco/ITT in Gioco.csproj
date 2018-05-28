@@ -293,7 +293,7 @@
     <Compile Include="Assets\ITT\Controlli\ControlloMovimento.cs" />
     <Compile Include="Assets\ITT\Controlli\MovimentoGiocatore.cs" />
     <Compile Include="Assets\ITT\Interazioni\Porta.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
+    <Compile Include="Assets\ITT\Interazioni\GestorePorte.cs" />
     <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
     <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
     <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
