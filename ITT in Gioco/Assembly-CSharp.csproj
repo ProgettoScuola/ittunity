@@ -52,9 +52,36 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
+     <Compile Include="Assets\Audio\Auto1.cs" />
+     <Compile Include="Assets\Audio\Auto2.cs" />
+     <Compile Include="Assets\Audio\Campanella.cs" />
+     <Compile Include="Assets\Audio\Mangiareveloce.cs" />
+     <Compile Include="Assets\Audio\Moto.cs" />
+     <Compile Include="Assets\Audio\Pioggiaombrello.cs" />
+     <Compile Include="Assets\Audio\Pioggiarealistico.cs" />
+     <Compile Include="Assets\Audio\Pioggiascorrimento.cs" />
+     <Compile Include="Assets\Audio\pitch.cs" />
+     <Compile Include="Assets\Audio\PortaAperta.cs" />
+     <Compile Include="Assets\Audio\PortaChiusa.cs" />
+     <Compile Include="Assets\Audio\Rottura.cs" />
+     <Compile Include="Assets\Audio\Sblocco.cs" />
+     <Compile Include="Assets\Audio\Sbloccodelicato.cs" />
+     <Compile Include="Assets\Audio\Scattofotocamera.cs" />
+     <Compile Include="Assets\Audio\scritturalavagna.cs" />
+     <Compile Include="Assets\Audio\Seggiola.cs" />
+     <Compile Include="Assets\Audio\Stampante.cs" />
+     <Compile Include="Assets\Audio\suonobevutaconcannuccia.cs" />
+     <Compile Include="Assets\Audio\Svegliaelettronica.cs" />
+     <Compile Include="Assets\Audio\Telefono1.cs" />
+     <Compile Include="Assets\Audio\Telefono2.cs" />
+     <Compile Include="Assets\Audio\Temporale.cs" />
+     <Compile Include="Assets\Audio\Torcia.cs" />
+     <Compile Include="Assets\Audio\torcia2.cs" />
+     <Compile Include="Assets\Audio\Vento.cs" />
      <Compile Include="Assets\Fixed Button.cs" />
      <Compile Include="Assets\FixedTouchField.cs" />
      <Compile Include="Assets\fps.cs" />
+     <Compile Include="Assets\ITT\Controlli\Analogico.cs" />
      <Compile Include="Assets\ITT\Controlli\ControlloMovimento.cs" />
      <Compile Include="Assets\ITT\Controlli\MovimentoGiocatore.cs" />
      <Compile Include="Assets\ITT\Interazioni\Porta.cs" />
