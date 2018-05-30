@@ -77,15 +77,14 @@
      <Compile Include="Assets\ITT\Controlli\Analogico.cs" />
      <Compile Include="Assets\ITT\Controlli\ControlloMovimento.cs" />
      <Compile Include="Assets\ITT\Controlli\MovimentoGiocatore.cs" />
+     <Compile Include="Assets\ITT\Interazioni\GestorePorte.cs" />
      <Compile Include="Assets\ITT\Interazioni\Porta.cs" />
-     <Compile Include="Assets\ITT\Interazioni\Porte.cs" />
      <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
      <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
      <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
      <Compile Include="Assets\ITT\MotoreGioco\GestoreEventiGioco.cs" />
      <Compile Include="Assets\ITT\MotoreGioco\Inventario.cs" />
-     <Compile Include="Assets\ITT\Salvataggio\Inventario\Inventario.cs" />
-     <Compile Include="Assets\ITT\Salvataggio\Inventario\Zaino.cs" />
+     <Compile Include="Assets\ITT\MotoreGioco\OggettoInventario.cs" />
      <Compile Include="Assets\ITT\Salvataggio\Statistiche\PlayerInfo.cs" />
      <Compile Include="Assets\ITT\Salvataggio\Statistiche\Statistiche.cs" />
      <Compile Include="Assets\ITT\Utilita\Utilita.cs" />
