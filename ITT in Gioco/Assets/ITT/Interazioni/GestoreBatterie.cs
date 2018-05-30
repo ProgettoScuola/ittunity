@@ -11,7 +11,7 @@ using ITT.MotoreGioco;
  * */
 namespace ITT.Interazione
 {
-    public class GestorePorte
+    public class GestoreBatterie
     {
 
 

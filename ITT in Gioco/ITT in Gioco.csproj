@@ -256,11 +256,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Compile Include="Assets\ITT\Interazioni\GestoreBatterie.cs" />
-    <Compile Include="Assets\ITT\MotoreGioco\OggettoInventario.cs" />
->>>>>>> ed557dae2fb4dd6848720f83a99d47eac4bf465b
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
     <Compile Include="Assets\Audio\Auto1.cs" />
     <Compile Include="Assets\Audio\Auto2.cs" />
@@ -294,7 +289,7 @@
     <Compile Include="Assets\ITT\Controlli\Analogico.cs" />
     <Compile Include="Assets\ITT\Controlli\ControlloMovimento.cs" />
     <Compile Include="Assets\ITT\Controlli\MovimentoGiocatore.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Gestore.cs" />
+    <Compile Include="Assets\ITT\Interazioni\GestoreBatterie.cs" />
     <Compile Include="Assets\ITT\Interazioni\GestorePorte.cs" />
     <Compile Include="Assets\ITT\Interazioni\Porta.cs" />
     <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
