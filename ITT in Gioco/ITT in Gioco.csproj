@@ -13,12 +13,14 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2017.4.0f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -289,9 +291,9 @@
     <Compile Include="Assets\ITT\Controlli\Analogico.cs" />
     <Compile Include="Assets\ITT\Controlli\ControlloMovimento.cs" />
     <Compile Include="Assets\ITT\Controlli\MovimentoGiocatore.cs" />
-    <Compile Include="Assets\ITT\Interazioni\GestoreBatterie.cs" />
+    <Compile Include="Assets\ITT\Interazioni\GestoreComputer.cs" />
     <Compile Include="Assets\ITT\Interazioni\GestorePorte.cs" />
-    <Compile Include="Assets\ITT\Interazioni\Porta.cs" />
+    <Compile Include="Assets\ITT\Interazioni\OggettoDiInterazione.cs" />
     <Compile Include="Assets\ITT\Interazioni\PuntiSalvataggio.cs" />
     <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
     <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
