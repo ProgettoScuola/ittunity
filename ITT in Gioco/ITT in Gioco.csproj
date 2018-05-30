@@ -258,7 +258,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ITT\Interazioni\Gestore.cs" />
     <Compile Include="Assets\ITT\MotoreGioco\OggettoInventario.cs" />
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
     <Compile Include="Assets\Audio\Auto1.cs" />
