@@ -13,8 +13,12 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+<<<<<<< HEAD
+    <CompilerResponseFile></CompilerResponseFile>
+=======
     <CompilerResponseFile>
     </CompilerResponseFile>
+>>>>>>> f29b696259ca096f5fd97f639b3f5e26abb9e25b
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
@@ -299,7 +303,10 @@
     <Compile Include="Assets\ITT\Interazioni\RaccogliOggetto.cs" />
     <Compile Include="Assets\ITT\Interazioni\UtilizzaOggetto.cs" />
     <Compile Include="Assets\ITT\MotoreGioco\GestoreEventiGioco.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Assets\ITT\MotoreGioco\Inventario.cs" />
+>>>>>>> f29b696259ca096f5fd97f639b3f5e26abb9e25b
     <Compile Include="Assets\ITT\Salvataggio\Statistiche\PlayerInfo.cs" />
     <Compile Include="Assets\ITT\Salvataggio\Statistiche\Statistiche.cs" />
     <Compile Include="Assets\ITT\Utilita\Utilita.cs" />
