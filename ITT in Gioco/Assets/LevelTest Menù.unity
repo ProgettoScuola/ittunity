@@ -118,7 +118,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh93276
+  m_Name: pb_Mesh-523288
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -12456,7 +12456,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh93154
+  m_Name: pb_Mesh-523316
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -15097,6 +15097,26 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &592542624 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1335962233936750, guid: 4a7c4f465e7d4554ba450f570d636d41,
+    type: 2}
+  m_PrefabInternal: {fileID: 595162847}
+--- !u!114 &592542625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592542624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd8483a581f34943bbb3c79c9a79c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroChiave: 0
+  chiusa: 0
+  serveChiave: 0
+  Giorni: 0
 --- !u!1001 &595162847
 Prefab:
   m_ObjectHideFlags: 0
@@ -23626,6 +23646,26 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &816113683 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1035008204835326, guid: 4a7c4f465e7d4554ba450f570d636d41,
+    type: 2}
+  m_PrefabInternal: {fileID: 595162847}
+--- !u!114 &816113684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816113683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd8483a581f34943bbb3c79c9a79c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroChiave: 0
+  chiusa: 0
+  serveChiave: 0
+  Giorni: 0
 --- !u!43 &819346112
 Mesh:
   m_ObjectHideFlags: 0
@@ -49488,7 +49528,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh93290
+  m_Name: pb_Mesh-523274
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
