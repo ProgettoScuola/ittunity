@@ -1,7 +1,8 @@
 ﻿namespace ITT.MotoreGioco
 {
 
-    public class OggettoInventario{
+    public class OggettoInventario
+    {
 
         public int id { get; set; }
         public string nome { get; set; }
@@ -11,8 +12,8 @@
 
 
 
- 
 
-    
 
+
+    }
 }
