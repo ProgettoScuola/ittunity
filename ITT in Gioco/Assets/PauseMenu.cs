@@ -9,12 +9,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        Pausemenu.SetActive(true);
+        Pausemenu.GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
     }
     public void Resume()
     {
-        Pausemenu.SetActive(false);
+        Pausemenu.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1;
     }
 }

@@ -3,7 +3,7 @@ guid: b0e5797764c54d14290b46d4aff39961
 timeCreated: 1527514588
 licenseType: Free
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: BezierCurve_001
     100002: BezierCurve_002
@@ -111,12 +111,39 @@ ModelImporter:
     4300034: BezierCurve_002
     4300036: BezierCurve_001
     4300038: Cylinder
+    6400000: BezierCurve_001
+    6400002: BezierCurve_002
+    6400004: BezierCurve_003
+    6400006: BezierCurve_004
+    6400008: BezierCurve_005
+    6400010: BezierCurve_006
+    6400012: BezierCurve_007
+    6400014: BezierCurve_008
+    6400016: Circle_001_MeshPart0
+    6400018: Circle_001_MeshPart1
+    6400020: Circle_001_MeshPart2
+    6400022: Circle_MeshPart0
+    6400024: Circle_MeshPart1
+    6400026: Circle_MeshPart2
+    6400028: Cylinder
+    6400030: Cylinder_001
+    6400032: Cylinder_002
+    6400034: Cylinder_003
+    6400036: Cylinder_004
+    6400038: Cylinder_005
     7400000: Default Take
     9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 102b0baf5d26336438c4d60d95dd9c1a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -129,6 +156,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -142,17 +170,19 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -160,7 +190,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1

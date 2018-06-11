@@ -34,13 +34,48 @@ namespace ITT.MotoreGioco
         }
 
 
+        public OggettoInventario cercaOggettoPerTipologia(OggettoInventario.TipologiaOggettoInventario e)
+        {
+            foreach (OggettoInventario o in listaOggettiInventario)
+            {
+                if (o.Tipologia == e)
+                {
+                    return o;
+                }
+            }
+            return null;//ritorna valore null se non trova l'id ricercato.
+        }
+
 
 
         public OggettoInventario aggiungiOggetto(OggettoInventario o)
         {
             if(getSommmaPesiOggettiInventario() + o.peso  < maxPeso) {
-                listaOggettiInventario.Add(o);
-                return o;
+                if(o.Tipologia == OggettoInventario.TipologiaOggettoInventario.MONETE
+                    || o.Tipologia == OggettoInventario.TipologiaOggettoInventario.BATTERIE
+                    || o.Tipologia == OggettoInventario.TipologiaOggettoInventario.CIBO
+                    || o.Tipologia == OggettoInventario.TipologiaOggettoInventario.FIALETTE
+                    )
+                {
+                    OggettoInventario f = cercaOggettoPerTipologia(o.Tipologia);
+                    if (f != null)
+                    {
+                        //trovato
+                        f.quantita += o.quantita;
+                        return f;
+                    }
+                    else
+                    {
+                        listaOggettiInventario.Add(o);
+                        return o;
+                    }
+                }
+                else
+                {
+                    listaOggettiInventario.Add(o);
+                    return o;
+                }
+                
             }
             else
             {
