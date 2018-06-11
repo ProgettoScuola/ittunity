@@ -14,12 +14,13 @@ namespace ITT.Interazione
     public class GestorePorte
     {
 
-        /**
-         * Metodo che controlla se posso aprire o meno UnOggetto di tipo PORTA
-         * Prende la porta con cui si interagisce e controlla nel inventario se si possiede la chiave ee se necessaria
-         * 
-         * Return true se si puo aprire, false se non si puo aprire
-         * */
+        /// <summary>
+        /// controlla se la porta è accessibile e se serve l'accesso o no,se accessibile e serve l'accesso, ricerca 
+        /// la chiave all'interno dell'inventario e se a disposizione viene utilizzata e rimossa.
+        /// </summary>
+        /// <param name="ogg">oggetto con cui si va ad interagire</param>
+        /// <param name="i"> inventario dell'utente </param>
+        /// <returns>ritorna false se non è possibile aprirla altrimenti true.</returns>
         public Boolean ControllaPorta(OggettoDiInterazione ogg,Inventario i)
         {
             if(ogg.Tipologia != OggettoDiInterazione.TipologiaOgettoDiInterazione.PORTA)
@@ -29,7 +30,7 @@ namespace ITT.Interazione
 
             if (!ogg.accessibile)
             {
-                return true;
+                return false;
             }
             if (!ogg.serveAccesso)
             {
@@ -48,7 +49,6 @@ namespace ITT.Interazione
                     i.rimuoviOggettoInventario(o);
                     return true;//se trova l'oggetto lo rimuove e passa il valore true.
                 }
-
 
 
 

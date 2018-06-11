@@ -16,12 +16,13 @@ namespace ITT.Interazione
 
 
 
-        /**
-         * Metodo che controlla se posso aprire o meno loggettoInvetario di tipo Computer
-         * Prende la porta con cui si interagisce e controlla nel inventario se si possiede la chiave ee se necessaria
-         * 
-         * Return true se si puo aprire, false se non si puo aprire
-         * */
+        /// <summary>
+        /// controlla se è possibile accedere al computer e se necessita di un accesso,se è possibile accedere ed è richiesto l'accesso
+        /// cerca l'oggetto password nell'inventario e se trovato lo utilizza e rimuove.
+        /// </summary>
+        /// <param name="ogg">oggetto di interazione</param>
+        /// <param name="i"> inventario dell'utente</param>
+        /// <returns>ritorna false se non è accessibile altrimenti torna true</returns>
         public Boolean ControllaComputer(OggettoDiInterazione ogg,Inventario i)
         {
             if (ogg.Tipologia != OggettoDiInterazione.TipologiaOgettoDiInterazione.COMPUTER)
@@ -31,7 +32,7 @@ namespace ITT.Interazione
 
             if (!ogg.accessibile)
             {
-                return true;
+                return false;
             }
             if (!ogg.serveAccesso)
             {
@@ -51,7 +52,7 @@ namespace ITT.Interazione
                     return true;//se trova l'oggetto lo rimuove e passa il valore true.
                 }
 
-
+                
 
 
             }
