@@ -46,8 +46,8 @@ namespace ITT.MotoreGioco
         /// ricerca un oggetto all'interno dell'inventario attraverso la loro tipologia. se presenti più oggetti
         /// della stessa tipologia all'interno dell'inventario, ritorna il primo oggetto trovato.
         /// </summary>
-        /// <param name="e"></param>
-        /// <returns></returns>
+        /// <param name="e">tipologia di oggetto inventario</param>
+        /// <returns>ritorna null se l'oggetto non è presente nell'inventario altrimenti torna l'oggetto</returns>
         public OggettoInventario cercaOggettoPerTipologia(OggettoInventario.TipologiaOggettoInventario e)
         {
             foreach (OggettoInventario o in listaOggettiInventario)
