@@ -5,21 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/menu.unity
-    guid: ef8f07b48ea2ddd429d71e8fd52951a5
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    guid: 5d38a4bb68c27004d8c410002db12cee
   - enabled: 1
-    path: Assets/scuola 3.unity
-    guid: db13cb33271011c45a9f88df0a4c8aa5
-  - enabled: 0
-    path: Assets/scena 2.unity
-    guid: f661481066829194a9f5b32f436a4616
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/LevelTestOggettiDaAggiungere.unity
+    guid: 9d80e70aa188e6448ad9c94be57c7d33
