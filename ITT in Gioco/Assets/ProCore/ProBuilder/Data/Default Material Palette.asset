@@ -8,15 +8,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -770389242, guid: 4df21bd079886d84699ca7be1316c7a7, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Default Material Palette
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: ProBuilderEditor-Unity5:ProBuilder2.EditorCommon:pb_MaterialPalette
   array:
-  - {fileID: 2100000, guid: 9053ef92190a905408d593c0ae02bcba, type: 2}
-  - {fileID: 2100000, guid: 7637a7c7b619deb47bf6ef059e659480, type: 2}
-  - {fileID: 2100000, guid: 2cbdeaeab9611f148be481887362139d, type: 2}
-  - {fileID: 2100000, guid: 833147f1620f2ae44bd7df085c48fb6c, type: 2}
-  - {fileID: 2100000, guid: d69b04be5a982954c8cd3fe580f63e07, type: 2}
+  - {fileID: 2100000, guid: ee25db07731fa06428aeecfb1e2dec62, type: 2}
+  - {fileID: 2100000, guid: 057d5430214e8414cafeee34639cae34, type: 2}
+  - {fileID: 2100000, guid: 6c0515de57deed8459f6222d2d67e82f, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
