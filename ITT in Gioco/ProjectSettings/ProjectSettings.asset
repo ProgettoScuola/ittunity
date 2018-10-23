@@ -42,7 +42,7 @@ PlayerSettings:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
   - logo: {fileID: 21300000, guid: 80ed44bc10eb29348b5a047f96eb3e8a, type: 3}
-    duration: 2
+    duration: 3
   - logo: {fileID: 21300000, guid: ce08488c0b9ffeb49a9d246f7a342a83, type: 3}
     duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
@@ -458,6 +458,7 @@ PlayerSettings:
   switchAllowsVideoCapturing: 1
   switchAllowsRuntimeAddOnContentInstall: 0
   switchDataLossConfirmation: 0
+  switchUserAccountLockEnabled: 0
   switchSupportedNpadStyles: 3
   switchSocketConfigEnabled: 0
   switchTcpInitialSendBufferSize: 32
