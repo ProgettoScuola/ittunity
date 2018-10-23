@@ -413,6 +413,7 @@
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\DN\SacredStudent_SchoolDesksAndChairs\Info.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
