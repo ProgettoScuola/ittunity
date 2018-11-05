@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/menu.unity
     guid: 5d38a4bb68c27004d8c410002db12cee
   - enabled: 1
-    path: Assets/LevelTestOggettiDaAggiungere.unity
-    guid: 9d80e70aa188e6448ad9c94be57c7d33
+    path: Assets/TirGames/SchoolScene/Scenes/New Scene 2.unity
+    guid: 1a52a40e2b28c9e478f431c403182ec3
