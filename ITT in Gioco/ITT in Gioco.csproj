@@ -311,6 +311,8 @@
     <Compile Include="Assets\menu.cs" />
     <Compile Include="Assets\MenuScript.cs" />
     <Compile Include="Assets\MouseLook.cs" />
+    <Compile Include="Assets\movimento camera automatica\MouseLook.cs" />
+    <Compile Include="Assets\movimento camera automatica\PathFollower.cs" />
     <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
