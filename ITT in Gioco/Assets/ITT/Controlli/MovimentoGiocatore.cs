@@ -9,7 +9,6 @@ public class MovimentoGiocatore : MonoBehaviour
 
     [Range(0, 1f)]
     public float accelerazione = 0.2f;
-
     public Transform camera;
     public float sensibilita = 3f;
     public float forzaSalto = 10f;
