@@ -21,7 +21,10 @@ public class GestoreEventiGioco : MonoBehaviour
     {
         FindObjectOfType<MovimentoGiocatore>().abilitaGyroSeDisponibile = toggle;
     }
-
+    public void Slider()
+    {
+        gameObject.SetActive(true);
+    }
     public static void DebugLine(string oggetto)
     {
         Text debugLine = GameObject.FindGameObjectWithTag("debugLine").GetComponent<Text>();
