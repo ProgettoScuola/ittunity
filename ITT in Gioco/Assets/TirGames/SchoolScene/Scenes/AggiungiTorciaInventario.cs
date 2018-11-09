@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AggiungiTorciaInventario : MonoBehaviour {
-    public int i;
     public GameObject TestoTorcia, Torcia, TorciaPlayer, Bottone, Luce, Luce2;
     public void AggiungiInventario()
     {
