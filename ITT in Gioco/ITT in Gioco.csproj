@@ -418,7 +418,7 @@
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnableCanvas.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnablePanel.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\MostraUI.cs" />
-    <Compile Include="Assets\TirGames\SchoolScene\Scenes\NascondiOggetti.cs" />
+    <Compile Include="Assets\TirGames\SchoolScene\Scenes\NascondiBatterie.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\MenuButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\SceneExit.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
