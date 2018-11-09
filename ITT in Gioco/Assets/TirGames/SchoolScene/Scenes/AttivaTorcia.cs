@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AttivaTorcia : MonoBehaviour {
-
+    public Canvas MobileStick;
+    public GameObject Canvas2;
     public int batteria;
     public int batteria2;
     public int batteria3;
@@ -23,22 +24,32 @@ public class AttivaTorcia : MonoBehaviour {
     {
         batteria3 = 1;
     }
-
     public void CheckBatterie()
     {
         if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
-        {
-            luce.SetActive(true);
-            luce2.SetActive(true);
-        }
+            On();
         else
-        {
-            ShowhidePanel();
-        }
+            hidePanel();
     }
-
-    public void ShowhidePanel()
+    public void On()
     {
-            Panel.gameObject.SetActive(true);
+        luce.SetActive(true);
+        luce2.SetActive(true);
+        MobileStick.gameObject.SetActive(true);
+    }
+    public void Off()
+    {
+        luce.SetActive(false);
+        luce2.SetActive(false);
+    }
+    public void hidePanel()
+    {
+        Panel.gameObject.SetActive(true);
+        Canvas2.SetActive(false);
+    }
+    public void showPanel()
+    {
+        Panel.gameObject.SetActive(false);
+        Canvas2.SetActive(true);
     }
 }

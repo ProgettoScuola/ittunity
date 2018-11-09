@@ -409,15 +409,16 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\TirGames\SchoolScene\Scenes\AggiungiTorciaInventario.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\AttivaTorcia.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\DisableButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\DisableCanvas.cs" />
-    <Compile Include="Assets\TirGames\SchoolScene\Scenes\DisableEnableMobileStick.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\DisablePanel.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnableButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnableCanvas.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnablePanel.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\MostraUI.cs" />
+    <Compile Include="Assets\TirGames\SchoolScene\Scenes\NascondiOggetti.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\MenuButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\SceneExit.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
