@@ -28,11 +28,13 @@ public class PathFollower : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.position = Vector3.MoveTowards (transform.position, targetPoint.position, speed * Time.deltaTime);
-		if (Vector3.Distance (transform.position, targetPoint.position) < 0.1f) 
-		{
-			index++;
-			index %= pathParent.childCount;
-			targetPoint = pathParent.GetChild (index);
-		}
-	}
+		//while(index<10){	
+			if (Vector3.Distance (transform.position, targetPoint.position) < 0.1f) 
+				{
+					index++;
+					index %= pathParent.childCount;
+					targetPoint = pathParent.GetChild (index);
+				}
+	//}
+}
 }
