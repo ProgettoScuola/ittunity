@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AttivaTorcia : MonoBehaviour {
     public Canvas MobileStick;
@@ -11,18 +12,29 @@ public class AttivaTorcia : MonoBehaviour {
     public GameObject luce;
     public GameObject luce2;
     public GameObject Panel;
+    public Text batterie;
+    public int contabatterie;
+
+    void Start()
+    {
+        contabatterie = 3;
+        batterie.text = batterie.ToString();
+    }
 
     public void AggiungiBatteria()
     {
         batteria = 1;
+        contabatterie = 2;
     }
     public void AggiungiBatteria2()
     {
         batteria2 = 1;
+        contabatterie = 1;
     }
     public void AggiungiBatteria3()
     {
         batteria3 = 1;
+        contabatterie = 0;
     }
     public void CheckBatterie()
     {
