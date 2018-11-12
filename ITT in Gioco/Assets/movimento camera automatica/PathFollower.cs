@@ -74,7 +74,7 @@ public class PathFollower : MonoBehaviour {
             Debug.Log("Incrementata index2");
             index2 %= pathParent.childCount;
             targetPoint = pathParent.GetChild(index2);
-            Debug.Log("index2: "index2);
+            Debug.Log("index2: " + index2);
             if (index2==2)
             {
                 Debug.Log("Entrato in if index2==2");
