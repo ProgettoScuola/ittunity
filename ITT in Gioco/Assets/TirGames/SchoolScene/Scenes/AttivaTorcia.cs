@@ -16,6 +16,7 @@ public class AttivaTorcia : MonoBehaviour {
     public int contabatterie;
     public GameObject quest2;
     public GameObject TextQuest;
+    public GameObject ContaBatterie;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class AttivaTorcia : MonoBehaviour {
         contabatterie--;
         //contabatterie = 2;
         batterie.text = contabatterie.ToString();
+        DisattivaTextBatterie();
     }
     public void AggiungiBatteria2()
     {
@@ -35,6 +37,7 @@ public class AttivaTorcia : MonoBehaviour {
         contabatterie--;
         //contabatterie = 1;
         batterie.text = contabatterie.ToString();
+        DisattivaTextBatterie();
     }
     public void AggiungiBatteria3()
     {
@@ -42,6 +45,7 @@ public class AttivaTorcia : MonoBehaviour {
         contabatterie--;
         //contabatterie = 0;
         batterie.text = contabatterie.ToString();
+        DisattivaTextBatterie();
     }
     public void RimuoviQuest()
     {
@@ -50,6 +54,11 @@ public class AttivaTorcia : MonoBehaviour {
             quest2.SetActive(false);
             TextQuest.SetActive(false);
         }
+    }
+    public void DisattivaTextBatterie()
+    {
+        if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
+            ContaBatterie.SetActive(false);
     }
     public void CheckBatterie()
     {
