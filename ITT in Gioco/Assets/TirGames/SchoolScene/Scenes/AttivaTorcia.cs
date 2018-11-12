@@ -18,23 +18,25 @@ public class AttivaTorcia : MonoBehaviour {
     void Start()
     {
         contabatterie = 3;
-        batterie.text = batterie.ToString();
+        batterie.text = contabatterie.ToString();
     }
-
     public void AggiungiBatteria()
     {
         batteria = 1;
         contabatterie = 2;
+        batterie.text = contabatterie.ToString();
     }
     public void AggiungiBatteria2()
     {
         batteria2 = 1;
         contabatterie = 1;
+        batterie.text = contabatterie.ToString();
     }
     public void AggiungiBatteria3()
     {
         batteria3 = 1;
         contabatterie = 0;
+        batterie.text = contabatterie.ToString();
     }
     public void CheckBatterie()
     {
