@@ -77,7 +77,7 @@ public class PathFollower : MonoBehaviour {
             Debug.Log(index2);
             if (index2==2)
             {
-                Debug.Log("Entrato in if index2==1");
+                Debug.Log("Entrato in if index2==2");
                 cam2.SetActive(false);
                 Debug.Log("Disattivo seconda camera");
                 //Debug.Log("Fermo tutto");
