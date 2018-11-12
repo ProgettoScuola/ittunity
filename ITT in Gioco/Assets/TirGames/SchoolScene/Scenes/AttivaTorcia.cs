@@ -14,6 +14,8 @@ public class AttivaTorcia : MonoBehaviour {
     public GameObject Panel;
     public Text batterie;
     public int contabatterie;
+    public GameObject quest2;
+    public GameObject TextQuest;
 
     void Start()
     {
@@ -41,10 +43,20 @@ public class AttivaTorcia : MonoBehaviour {
         //contabatterie = 0;
         batterie.text = contabatterie.ToString();
     }
+    public void RimuoviQuest()
+    {
+        if (contabatterie==0)
+        {
+            quest2.SetActive(false);
+            TextQuest.SetActive(false);
+        }
+    }
     public void CheckBatterie()
     {
         if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
+        {
             On();
+        }
         else
             hidePanel();
     }

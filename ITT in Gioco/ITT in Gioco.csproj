@@ -245,6 +245,12 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/aniel/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>D:/Program Files/Unity2017.4.13f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>D:/Program Files/Unity2017.4.13f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ITT in Gioco.Plugins.csproj">
@@ -471,6 +477,7 @@
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\EnablePanel.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\MostraUI.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\NascondiBatterie.cs" />
+    <Compile Include="Assets\TirGames\SchoolScene\Scenes\Quest.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\MenuButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\SceneExit.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
