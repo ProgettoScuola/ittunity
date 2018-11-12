@@ -38,7 +38,7 @@ public class PathFollower : MonoBehaviour {
             index %= pathParent.childCount;
             targetPoint = pathParent.GetChild(index);
             Debug.Log("index: " + index);
-            if (index==1)
+            if (index==2)//modificata da 1 a 2;
             {
                 cam1.SetActive(false);
                 Debug.Log("Disattivata prima camera");
