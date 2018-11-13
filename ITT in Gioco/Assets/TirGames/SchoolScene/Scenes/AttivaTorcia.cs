@@ -129,10 +129,10 @@ public class AttivaTorcia : MonoBehaviour {
             quest21.SetActive(true);
             quests = 2;
         }
-        else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && )
-        {
-
-        }
+        //else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 )
+        //{
+//
+        //}
         else
         {
             AttivaQuest1();
