@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Quest : MonoBehaviour {
     public GameObject quest1, quest2, TextQuest, QuestComplete;
-    public int quest;
+    public int quest=0;
 	
 	public void AttivaQuest1 () {
         if (quest == 2)
@@ -13,7 +13,6 @@ public class Quest : MonoBehaviour {
             CheckQuest();
             StartCoroutine(Disattiva());
         }
-            
         TextQuest.SetActive(true);
         //TextQuest.text = TextQuest.ToString();
         quest1.SetActive(true);
@@ -34,7 +33,12 @@ public class Quest : MonoBehaviour {
             TextQuest.SetActive(false);
             QuestComplete.SetActive(true);
             StartCoroutine(Disattiva());
-
+        }
+        else if (quest == 1)
+        {
+            quest1.SetActive(false);
+            quest2.SetActive(true);
+            quest = 2;
         }
         else
         {
