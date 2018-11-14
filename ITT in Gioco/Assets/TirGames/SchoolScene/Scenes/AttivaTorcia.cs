@@ -18,6 +18,7 @@ public class AttivaTorcia : MonoBehaviour {
     public GameObject TextQuest;
     public GameObject ContaBatterie;
     public int quest = 0;
+    public int incre = 0;
     void Start()
     {
         contabatterie = 3;
@@ -90,38 +91,21 @@ public class AttivaTorcia : MonoBehaviour {
         Panel.gameObject.SetActive(false);
         Canvas2.SetActive(true);
     }
+    public void Incremento()
+    {
+        incre = 1;
+    }
+
     public GameObject quest1, quest21, TextQuest2, QuestComplete;
     public int quests = 0;
     //quest
-    public void AttivaQuest1()//torcia
-    {
-        CheckQuest();
-        if (quests == 2)
-        {
-            StartCoroutine(Disattiva());
-        }
-        TextQuest2.SetActive(true);
-        //TextQuest.text = TextQuest.ToString();
-        quest1.SetActive(true);
-        quests = 1;
-    }
-    public void AttivaQuest2()//batterie
-    {
-        //CheckQuest();
-        //TextQuest.text = TextQuest.ToString();
-        quest1.SetActive(false);
-        quest21.SetActive(true);
-        quests = 2;
-    }
     public void CheckQuest()
     {
-        if (quests == 2)
+        if (quests == 0)
         {
-            quest1.SetActive(false);
-            quest21.SetActive(false);
-            TextQuest2.SetActive(false);
-            QuestComplete.SetActive(true);
-            StartCoroutine(Disattiva());
+        TextQuest2.SetActive(true);
+        quest1.SetActive(true);
+        quests = 1;
         }
         else if (quests == 1)
         {
@@ -129,13 +113,21 @@ public class AttivaTorcia : MonoBehaviour {
             quest21.SetActive(true);
             quests = 2;
         }
-        //else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 )
-        //{
-//
-        //}
-        else
+        else if (quests == 2)
         {
-            AttivaQuest1();
+            quest1.SetActive(false);
+            quest21.SetActive(false);
+            TextQuest2.SetActive(false);
+            QuestComplete.SetActive(true);
+            StartCoroutine(Disattiva());
+        }
+        else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && incre == 1)
+        {
+            quest1.SetActive(false);
+            quest21.SetActive(false);
+            TextQuest2.SetActive(false);
+            QuestComplete.SetActive(true);
+            StartCoroutine(Disattiva());
         }
     }
     IEnumerator Disattiva()
