@@ -19,6 +19,7 @@ public class AttivaTorcia : MonoBehaviour {
     public GameObject ContaBatterie;
     public int quest = 0;
     public int incre = 0;
+    public int checktorcia = 0;
     void Start()
     {
         contabatterie = 3;
@@ -95,6 +96,10 @@ public class AttivaTorcia : MonoBehaviour {
     {
         incre = 1;
     }
+    public void CheckTorcia()
+    {
+        checktorcia = 1;
+    }
 
     public GameObject quest1, quest21, TextQuest2, QuestComplete;
     public int quests = 0;
@@ -103,21 +108,31 @@ public class AttivaTorcia : MonoBehaviour {
     {
         if (quests == 0 && incre == 1)
         {
-        TextQuest2.SetActive(true);
-        quest1.SetActive(true);
-        quests = 1;
+        TextQuest2.SetActive(false);
+        quest1.SetActive(false);
+            if (checktorcia == 1)
+            {
+                quests = 1;
+            }
         }
         else if (quests == 0)
         {
             TextQuest2.SetActive(true);
             quest1.SetActive(true);
-            quests = 1;
+            if (checktorcia == 1)
+            {
+                quests = 1;
+            }
         }
         else if (quests == 1)
         {
             quest1.SetActive(false);
+            TextQuest2.SetActive(true);
             quest21.SetActive(true);
-            quests = 2;
+            if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
+            {
+                quests = 2;
+            }
         }
         else if (quests == 2)
         {
