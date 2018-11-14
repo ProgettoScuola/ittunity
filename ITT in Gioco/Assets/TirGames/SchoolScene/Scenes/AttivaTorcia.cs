@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class AttivaTorcia : MonoBehaviour {
     public Canvas MobileStick;
     public GameObject Canvas2;
-    public int batteria;
-    public int batteria2;
-    public int batteria3;
+    public int batteria=0;
+    public int batteria2=0;
+    public int batteria3=0;
     public GameObject luce;
     public GameObject luce2;
     public GameObject Panel;
@@ -32,6 +32,10 @@ public class AttivaTorcia : MonoBehaviour {
         //contabatterie = 2;
         batterie.text = contabatterie.ToString();
         DisattivaTextBatterie();
+        if (batteria2==1 && batteria3==1)
+        {
+            quests = 2;
+        }
     }
     public void AggiungiBatteria2()
     {
@@ -40,6 +44,10 @@ public class AttivaTorcia : MonoBehaviour {
         //contabatterie = 1;
         batterie.text = contabatterie.ToString();
         DisattivaTextBatterie();
+        if (batteria == 1 && batteria3 == 1)
+        {
+            quests = 2;
+        }
     }
     public void AggiungiBatteria3()
     {
@@ -48,6 +56,10 @@ public class AttivaTorcia : MonoBehaviour {
         //contabatterie = 0;
         batterie.text = contabatterie.ToString();
         DisattivaTextBatterie();
+        if (batteria == 1 && batteria2 == 1)
+        {
+            quests = 2;
+        }
     }
     public void RimuoviQuest()
     {
@@ -129,10 +141,6 @@ public class AttivaTorcia : MonoBehaviour {
             quest1.SetActive(false);
             TextQuest2.SetActive(true);
             quest21.SetActive(true);
-            if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
-            {
-                quests = 2;
-            }
             
         }
         else if (quests == 2)
