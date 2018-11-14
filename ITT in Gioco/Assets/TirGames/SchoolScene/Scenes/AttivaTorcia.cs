@@ -101,11 +101,17 @@ public class AttivaTorcia : MonoBehaviour {
     //quest
     public void CheckQuest()
     {
-        if (quests == 0)
+        if (quests == 0 && incre == 1)
         {
         TextQuest2.SetActive(true);
         quest1.SetActive(true);
         quests = 1;
+        }
+        else if (quests == 0)
+        {
+            TextQuest2.SetActive(true);
+            quest1.SetActive(true);
+            quests = 1;
         }
         else if (quests == 1)
         {
