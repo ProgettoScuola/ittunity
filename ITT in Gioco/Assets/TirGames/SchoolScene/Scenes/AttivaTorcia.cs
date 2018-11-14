@@ -133,6 +133,7 @@ public class AttivaTorcia : MonoBehaviour {
             {
                 quests = 2;
             }
+            
         }
         else if (quests == 2)
         {
