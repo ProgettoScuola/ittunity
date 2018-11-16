@@ -302,6 +302,9 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/aniel/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Managed-PVR">
+      <HintPath>Assets/Pimax/Plugins/Managed-PVR.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Program Files/Unity2017.4.13f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -326,6 +329,16 @@
   <ItemGroup>
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
     <None Include="Assets\DN\SacredStudent_SchoolDesksAndChairs\Info.txt" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Dependencies.txt" />
+    <None Include="Assets\Pimax\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Resources\LeapCG.cginc" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Shaders\PassthroughBackground.shader" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Shaders\PassthroughForeground.shader" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Shaders\RuntimeGizmos.shader" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Shaders\ThresholdOverlay.shader" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Shaders\VertexOffsetShader.shader" />
+    <None Include="Assets\Pimax\LeapMotion\Core\Version.txt" />
+    <None Include="Assets\Pimax\LeapMotion\Core\readme.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
