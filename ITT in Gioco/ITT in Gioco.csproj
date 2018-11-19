@@ -263,6 +263,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_MK\MKGlassFree\MKGlassFreeMaterialHelper.cs" />
+    <Compile Include="Assets\ApriPortaInformatica.cs" />
     <Compile Include="Assets\AttivaSliderDisplay.cs" />
     <Compile Include="Assets\Audio\Auto1.cs" />
     <Compile Include="Assets\Audio\Auto2.cs" />

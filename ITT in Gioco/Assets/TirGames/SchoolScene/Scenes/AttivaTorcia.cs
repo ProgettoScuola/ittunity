@@ -20,6 +20,7 @@ public class AttivaTorcia : MonoBehaviour {
     public int quest = 0;
     public int incre = 0;
     public int checktorcia = 0;
+    public GameObject PortaInfoChiusa, PortaInfoAperta;
     void Start()
     {
         contabatterie = 3;
@@ -112,10 +113,26 @@ public class AttivaTorcia : MonoBehaviour {
     {
         checktorcia = 1;
     }
+    public void ApriPortaInformatica()
+    {
+        if (info == 1 || quests == 2)
+        {
+            quests = 3;
+            PortaInfoChiusa.SetActive(false);
+            PortaInfoAperta.SetActive(true);
+            CheckQuest();
+        }
+    }
 
-    public GameObject quest1, quest21, TextQuest2, QuestComplete;
+    public GameObject quest1, quest21, quest3, TextQuest2, QuestComplete;
     public int quests = 0;
+    public int info = 0;
     //quest
+    public void IncrementaQuests()
+    {
+        quests = 4;
+        CheckQuest();
+    }
     public void CheckQuest()
     {
         if (quests == 0 && incre == 1)
@@ -141,20 +158,33 @@ public class AttivaTorcia : MonoBehaviour {
             quest1.SetActive(false);
             TextQuest2.SetActive(true);
             quest21.SetActive(true);
-            
         }
         else if (quests == 2)
         {
+            quest21.SetActive(false);
+            TextQuest2.SetActive(true);
+            quest3.SetActive(true);
+            ApriPortaInformatica();
+        }
+        else if (quests == 3)
+        {
             quest1.SetActive(false);
             quest21.SetActive(false);
-            TextQuest2.SetActive(false);
-            QuestComplete.SetActive(true);
-            StartCoroutine(Disattiva());
+            info = 1;
+            ApriPortaInformatica();
         }
         else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && incre == 1)
         {
             quest1.SetActive(false);
             quest21.SetActive(false);
+            info = 1;
+            ApriPortaInformatica();
+        }
+        else if (quests == 4)
+        {
+            quest1.SetActive(false);
+            quest21.SetActive(false);
+            quest3.SetActive(false);
             TextQuest2.SetActive(false);
             QuestComplete.SetActive(true);
             StartCoroutine(Disattiva());
