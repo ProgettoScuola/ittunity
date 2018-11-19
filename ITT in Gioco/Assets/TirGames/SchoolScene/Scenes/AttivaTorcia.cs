@@ -20,13 +20,13 @@ public class AttivaTorcia : MonoBehaviour {
     public int quest = 0;
     public int incre = 0;
     public int checktorcia = 0;
-    public GameObject PortaInfoChiusa, PortaInfoAperta;
+    public GameObject PortaInfoChiusa, PortaInfoAperta, ScrivaniaCollider, ScrivaniaNoCollider;
     void Start()
     {
         contabatterie = 3;
         batterie.text = contabatterie.ToString();
     }
-    public void AggiungiBatteria()
+    public void AggiungiBatteria() //aggiunge batteria1 per torcia e decrementa contatore a schermo di batterie mancanti
     {
         batteria = 1;
         contabatterie--;
@@ -38,7 +38,7 @@ public class AttivaTorcia : MonoBehaviour {
             quests = 2;
         }
     }
-    public void AggiungiBatteria2()
+    public void AggiungiBatteria2() //aggiunge batteria2 per torcia e decrementa contatore a schermo di batterie mancanti
     {
         batteria2 = 1;
         contabatterie--;
@@ -50,7 +50,7 @@ public class AttivaTorcia : MonoBehaviour {
             quests = 2;
         }
     }
-    public void AggiungiBatteria3()
+    public void AggiungiBatteria3() //aggiunge batteria3 per torcia e decrementa contatore a schermo di batterie mancanti
     {
         batteria3 = 1;
         contabatterie--;
@@ -62,7 +62,7 @@ public class AttivaTorcia : MonoBehaviour {
             quests = 2;
         }
     }
-    public void RimuoviQuest()
+    public void RimuoviQuest() //rimuove la seconda quest
     {
         if (contabatterie==0)
         {
@@ -70,12 +70,12 @@ public class AttivaTorcia : MonoBehaviour {
             TextQuest.SetActive(false);
         }
     }
-    public void DisattivaTextBatterie()
+    public void DisattivaTextBatterie() //disattiva il contatore delle batterie se sono state recuperate tutte e 3
     {
         if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
             ContaBatterie.SetActive(false);
     }
-    public void CheckBatterie()
+    public void CheckBatterie() //fa il check delle batterie per poter accendere o no la torcia
     {
         if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
         {
@@ -84,104 +84,84 @@ public class AttivaTorcia : MonoBehaviour {
         else
             hidePanel();
     }
-    public void On()
+    public void On() //attiva luce torcia
     {
         luce.SetActive(true);
         luce2.SetActive(true);
         MobileStick.gameObject.SetActive(true);
     }
-    public void Off()
+    public void Off() //disattiva luce torcia
     {
         luce.SetActive(false);
         luce2.SetActive(false);
     }
-    public void hidePanel()
+    public void hidePanel() //nasconde un pannello
     {
         Panel.gameObject.SetActive(true);
         Canvas2.SetActive(false);
     }
-    public void showPanel()
+    public void showPanel() //mostra un pannello
     {
         Panel.gameObject.SetActive(false);
         Canvas2.SetActive(true);
     }
-    public void Incremento()
-    {
-        incre = 1;
-    }
-    public void CheckTorcia()
+    public void CheckTorcia() //incrementa variabile checktorcia se è stata presa la torcia senza avviare la quest (serve per successivo controllo)
     {
         checktorcia = 1;
     }
-    public void ApriPortaInformatica()
-    {
-        if (info == 1 || quests == 2)
-        {
-            quests = 3;
-            PortaInfoChiusa.SetActive(false);
-            PortaInfoAperta.SetActive(true);
-            //CheckQuest();
-        }
-    }
-
+    //quest
     public GameObject quest1, quest21, quest3, TextQuest2, QuestComplete;
     public int quests = 0;
     public int info = 0;
-    //quest
-    public void IncrementaQuests()
-    {
-        quests = 4;
-        CheckQuest();
-    }
     public void CheckQuest()
     {
-        if (quests == 0 && incre == 1)
-        {
-        TextQuest2.SetActive(false);
-        quest1.SetActive(false);
-            if (checktorcia == 1)
-            {
-                quests = 1;
-            }
-        }
-        else if (quests == 0)
+        if (quests == 0) //attiva raccogli torcia
         {
             TextQuest2.SetActive(true);
             quest1.SetActive(true);
             if (checktorcia == 1)
             {
                 quests = 1;
+                quest1.SetActive(false);
+                TextQuest2.SetActive(false);
             }
         }
-        else if (quests == 1)
+        else if (quests == 1) //attiva raccogli batterie
         {
-            quest1.SetActive(false);
             TextQuest2.SetActive(true);
             quest21.SetActive(true);
         }
-        else if (quests == 2)
+        else if (quests == 2) //attiva dirigiti al laboratorio ed apre porta laboratorio informatica
         {
             quest21.SetActive(false);
             TextQuest2.SetActive(true);
             quest3.SetActive(true);
-            ApriPortaInformatica();
+            quests = 3;
+            PortaInfoChiusa.SetActive(false);
+            PortaInfoAperta.SetActive(true);
         }
-        else if (quests == 3)
+        else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && quests == 2) //se sono state raccolte le 3 batterie e la torcia senza attivare nessuna quest vengono automaticamente disattivate e richiama metodo ApriPortaInformatica che controllerà se c'è la possibilità di aprire la porta del laboratorio di informatica
         {
             quest1.SetActive(false);
             quest21.SetActive(false);
-            info = 1;
-            ApriPortaInformatica();
+            quests = 3;
+            PortaInfoChiusa.SetActive(false);
+            PortaInfoAperta.SetActive(true);
         }
-        else if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && incre == 1)
+        else if (quests == 3) //disattiva le prima due quest e modifica valore info (informatica) ad 1 e richiama metodo ApriPortaInformatica che controllerà se c'è la possibilità di aprire la porta del laboratorio di informatica
         {
+            Debug.Log("entro in else if (quests == 3)");
             quest1.SetActive(false);
             quest21.SetActive(false);
-            info = 1;
-            ApriPortaInformatica();
+            quest3.SetActive(false);
+            IncrementaQuests();
+            Debug.Log("Ho eseguito IncrementaQuests()");
         }
-        else if (quests == 4)
+        else if (quests == 4) //disattiva tutte le quest e fa vedere la scritta hai completato tutti gli obiettivi, scompare dopo 5 secondi
         {
+            ScrivaniaCollider.SetActive(false);
+            ScrivaniaNoCollider.SetActive(true);
+            ContaBatterie.SetActive(false);
             quest1.SetActive(false);
             quest21.SetActive(false);
             quest3.SetActive(false);
@@ -194,5 +174,12 @@ public class AttivaTorcia : MonoBehaviour {
     {
         yield return new WaitForSeconds(5);
         QuestComplete.SetActive(false);
+    }
+    public void IncrementaQuests() //incrementa il valore quests a 4 dopo aver completato il quesito di informatica
+    {
+        Debug.Log("entro in IncrementaQuests()");
+        quests = 4;
+        CheckQuest();
+        Debug.Log("Ho eseguito IncrementaQuests() e torno a CheckQuest()");
     }
 }
