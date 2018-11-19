@@ -120,7 +120,7 @@ public class AttivaTorcia : MonoBehaviour {
             quests = 3;
             PortaInfoChiusa.SetActive(false);
             PortaInfoAperta.SetActive(true);
-            CheckQuest();
+            //CheckQuest();
         }
     }
 
