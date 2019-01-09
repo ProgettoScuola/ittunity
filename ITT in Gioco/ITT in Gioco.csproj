@@ -672,6 +672,7 @@
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\SchoolSceneAssets\Menu\Scripts\SceneExit.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\AggiungiTorciaInventario.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\AttivaTorcia.cs" />
+    <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\ColliderChiusuraPorta.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\DisableButton.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\DisableCanvas.cs" />
     <Compile Include="Assets\TirGames\SchoolScene\Scenes\Script\DisablePanel.cs" />

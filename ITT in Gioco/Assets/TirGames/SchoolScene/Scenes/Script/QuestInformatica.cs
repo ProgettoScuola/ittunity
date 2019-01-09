@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestInformatica : MonoBehaviour {
-    private int numogg;
-    public GameObject Ram, HDD, displayverde, displayrosso, displaybianco, portainfo;
+    private int numogg=0;
+    public GameObject Ram, HDD, displayverde, displayrosso, displaybianco, PortaInfoChiusa, PortaInfoAperta;
 
 	void Start () {
 		
 	}
+    public void ChiudiPorta ()
+    {
+        PortaInfoAperta.SetActive(false);
+        PortaInfoAperta.SetActive(true);
+    }
     public void Oggetto1 ()
     {
         numogg = 1;
@@ -18,6 +23,7 @@ public class QuestInformatica : MonoBehaviour {
     public void Oggetto2 ()
     {
         numogg = 2;
+        HDD.SetActive(false);
     }
     public void Oggetto3 ()
     {
@@ -33,9 +39,20 @@ public class QuestInformatica : MonoBehaviour {
         {
             displaybianco.SetActive(false);
             displayverde.SetActive(true);
-            gameObject.GetComponent<AttivaTorcia>;
-            AttivaTorcia.PortaInfoChiusa.SetActive(false);
-
+            PortaInfoChiusa.SetActive(false);
+            PortaInfoAperta.SetActive(true);
         }
+        else
+        {
+            displaybianco.SetActive(false);
+            displayrosso.SetActive(true);
+            StartCoroutine(ResetDisplay());
+        }
+    }
+    IEnumerator ResetDisplay()
+    {
+        yield return new WaitForSeconds(5);
+        displayrosso.SetActive(false);
+        displaybianco.SetActive(true);
     }
 }
