@@ -11,8 +11,11 @@ public class ColliderChiusuraPorta : MonoBehaviour {
     }
     IEnumerator ChiusuraPorta()
     {
+        Debug.Log("Entrato in ChiusuraPorta");
         yield return new WaitForSeconds(5);
         PortaInfoAperta.SetActive(false);
-        PortaInfoAperta.SetActive(true);
+        PortaInfoChiusa.SetActive(true);
+        Oggetto.SetActive(false);
+        Debug.Log("EseguitoChiusuraPorta");
     }
 }
