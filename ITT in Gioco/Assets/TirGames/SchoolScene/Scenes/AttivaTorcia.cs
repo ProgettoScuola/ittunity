@@ -21,8 +21,12 @@ public class AttivaTorcia : MonoBehaviour {
     public int incre = 0;
     public int checktorcia = 0;
     public GameObject PortaInfoChiusa, PortaInfoAperta, ScrivaniaCollider, ScrivaniaNoCollider;
+    public int quests;
+    public int info;
     void Start()
     {
+        quests = 0;
+        info = 0;
         contabatterie = 3;
         batterie.text = contabatterie.ToString();
     }
@@ -111,8 +115,6 @@ public class AttivaTorcia : MonoBehaviour {
     }
     //quest
     public GameObject quest1, quest21, quest3, TextQuest2, QuestComplete;
-    public int quests = 0;
-    public int info = 0;
     public void CheckQuest()
     {
         if (quests == 0) //attiva raccogli torcia
