@@ -11,7 +11,7 @@ public class AttivaTorcia : MonoBehaviour {
     public int batteria3=0;
     public GameObject luce;
     public GameObject luce2;
-    public GameObject Panel;
+    public GameObject Panel, PanelFoglio;
     public Text batterie;
     public int contabatterie;
     public GameObject quest2;
@@ -24,6 +24,7 @@ public class AttivaTorcia : MonoBehaviour {
     public int quests;
     public int info;
     public GameObject quest1, quest21, quest3, quest4, TextQuest2, QuestComplete;
+    private int OnTorcia = 1;
     void Start()
     {
         quests = 0;
@@ -82,9 +83,13 @@ public class AttivaTorcia : MonoBehaviour {
     }
     public void CheckBatterie() //fa il check delle batterie per poter accendere o no la torcia
     {
-        if (batteria == 1 && batteria2 == 1 && batteria3 == 1)
+        if (batteria == 1 && batteria2 == 1 && batteria3 == 1 && OnTorcia == 1)
         {
             On();
+        }
+        else if (OnTorcia == 0)
+        {
+            Off();
         }
         else
             hidePanel();
@@ -93,12 +98,14 @@ public class AttivaTorcia : MonoBehaviour {
     {
         luce.SetActive(true);
         luce2.SetActive(true);
-        MobileStick.gameObject.SetActive(true);
+        OnTorcia = 0;
+        //MobileStick.gameObject.SetActive(true);
     }
     public void Off() //disattiva luce torcia
     {
         luce.SetActive(false);
         luce2.SetActive(false);
+        OnTorcia = 1;
     }
     public void hidePanel() //nasconde un pannello
     {
